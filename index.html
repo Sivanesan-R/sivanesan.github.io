@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivanesan R - Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">Sivanesan R</div>
+
+            <div class="desktop-nav">
+                <button data-target="home" class="nav-link">Home</button>
+                <button data-target="about" class="nav-link">About</button>
+                <button data-target="skills" class="nav-link">Skills</button>
+                <button data-target="projects" class="nav-link">Projects</button>
+                <button data-target="contact" class="nav-link">Contact</button>
+            </div>
+
+            <div class="mobile-menu-button">
+                <button id="menu-button">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                    <i data-lucide="x" id="close-icon" class="hidden"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu">
+            <div class="mobile-nav-links">
+                <button data-target="home" class="nav-link">Home</button>
+                <button data-target="about" class="nav-link">About</button>
+                <button data-target="skills" class="nav-link">Skills</button>
+                <button data-target="projects" class="nav-link">Projects</button>
+                <button data-target="contact" class="nav-link">Contact</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="animated-bg">
+            <svg class="svg1" viewBox="0 0 200 200">
+                <defs>
+                    <pattern id="circuit" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <rect width="40" height="40" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.3" />
+                        <circle cx="20" cy="20" r="2" fill="#00d4ff" opacity="0.5" />
+                    </pattern>
+                </defs>
+                <rect width="200" height="200" fill="url(#circuit)" />
+            </svg>
+            <svg class="svg2" viewBox="0 0 200 200">
+                <defs>
+                    <pattern id="tech" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+                        <polygon points="15,5 25,15 15,25 5,15" fill="none" stroke="#8b5cf6" stroke-width="0.8"
+                            opacity="0.4" />
+                    </pattern>
+                </defs>
+                <rect width="200" height="200" fill="url(#tech)" />
+            </svg>
+        </div>
+        <div class="hero-content">
+            <h1><span>Sivanesan</span><span class="hero-name-highlight"> R</span></h1>
+            <p class="subtitle">AI/ML Enthusiast | Future-Focused Developer</p>
+            <p>I'm Sivanesan, an engineering student exploring AI, ML & smart systems.</p>
+            <a href="#about" class="btn-glow-hero" data-target="about">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2 class="section-heading animate-on-scroll">About <span class="text-electric-green">Me</span></h2>
+        <div class="about-container">
+            <div class="animate-on-scroll">
+                <img src="image/sivanesan.jpg" alt="Sivanesan R - Engineering Student" class="profile-img" />
+            </div>
+            <div class="about-details">
+                <div class="card animate-on-scroll">
+                    <h3><span class="text-neon-blue">My Story</span></h3>
+                    <p>I'm Sivanesan from Tamil Nadu, pursuing B.Tech AI & ML at Hindusthan College (2026). Passionate
+                        about robotics, automation & building smart solutions.</p>
+                    <p class="goal-text">My goal: secure a top tech job to innovate & contribute meaningfully.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h3 class="text-cyber-purple">🎓 Education</h3>
+                    <p><strong>B.Tech AI & ML</strong></p>
+                    <p>Hindusthan College of Engineering & Technology</p>
+                    <p class="education-details">Expected Graduation: 2026 • CGPA: 8.00/10.0</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h3 class="text-electric-green">💼 Experience</h3>
+                    <p><strong>Data Science Intern</strong> – Ether Infotech (July 2024)</p>
+                    <p class="experience-desc">Trained in Python, focused on foundational data handling</p>
+                    <br />
+                    <p><strong>Web Development Intern</strong> – Nitroware Tech</p>
+                    <p class="experience-desc">Gained practical frontend development experience</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <h3 class="text-cyber-purple">🏆 Certifications & Achievements</h3>
+                    <p><strong>Certifications</strong></p>
+                    <ul>
+                        <li>• IBM - Java Fundamentals</li>
+                        <li>• IBM - Introduction to Python</li>
+                    </ul>
+                    <p><strong>Achievements</strong></p>
+                    <ul>
+                        <li>• Champions, Cricket Tournament - 2022</li>
+                        <li>• Runners up, Kabbadi Tournament - 2019</li>
+                    </ul>
+                </div>
+                <div class="resume-button-container animate-on-scroll">
+                    <a href="#" download="Sivanesan_R_Resume.pdf" class="btn-download">⬇ Download Full Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="container" id="skills-section-observer">
+            <h2 class="section-heading animate-on-scroll">
+                Skills & <span class="text-neon-blue">Technologies</span>
+            </h2>
+            <div id="skills-container" class="skills-grid">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container" id="projects-section-observer">
+            <h2 class="section-heading animate-on-scroll">
+                Featured <span class="text-electric-green">Projects</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card main-project animate-on-scroll">
+                    <img src="image/sales.png" alt="Sales prediction dashboard with ML analytics"
+                        class="project-image" />
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Prediction Using ML</h3>
+                        <p class="project-description">
+                            Predicts future sales using past data for decision-making & inventory management.
+                            Implemented multiple algorithms and achieved high accuracy in forecasting business metrics.
+                        </p>
+                        <div class="project-details">
+                            <h4 class="project-subheading">Tech Stack:</h4>
+                            <div class="tech-stack">
+                                <span class="tech-tag python">Python</span>
+                                <span class="tech-tag pandas">Pandas</span>
+                                <span class="tech-tag numpy">NumPy</span>
+                                <span class="tech-tag sklearn">Sklearn</span>
+                                <span class="tech-tag matplotlib">Matplotlib</span>
+                                <span class="tech-tag seaborn">Seaborn</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="project-subheading">Algorithms Used:</h4>
+                            <p>Linear Regression, Decision Tree, Random Forest</p>
+                        </div>
+                        <div class="project-details">
+                            <h4 class="project-subheading">Role:</h4>
+                            <p>Full ownership—data prep, EDA, model building, tuning & visualization</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Sivanesan-R/Sales-Prediction" target="_blank" rel="noopener"
+                                class="interactive-btn code-btn">
+                                <i data-lucide="github"></i><span>View Code</span>
+                            </a>
+                            <!-- <button class="interactive-btn demo-btn">
+                                <i data-lucide="external-link"></i><span>Live Demo</span>
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card placeholder-card animate-on-scroll">
+                    <i data-lucide="plus" class="placeholder-icon"></i>
+                    <h3 class="placeholder-title">Coming Soon</h3>
+                    <p class="placeholder-description">More exciting projects in development</p>
+                </div>
+                <div class="project-card placeholder-card animate-on-scroll">
+                    <i data-lucide="lightbulb" class="placeholder-icon"></i>
+                    <h3 class="placeholder-title">Your Idea Here</h3>
+                    <p class="placeholder-description">Let's collaborate on something amazing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container" id="contact-section-observer">
+            <h2 class="section-heading animate-on-scroll">
+                Get In <span class="text-neon-blue">Touch</span>
+            </h2>
+            <div class="contact-grid">
+                <div class="animate-on-scroll">
+                    <div class="glow-card-contact form-container">
+                        <h3>Send Me a Message</h3>
+                        <p class="form-description">Get in touch and I'll get back to you as soon as possible.</p>
+                        <form id="contact-form" class="contact-form-fields">
+                            <div>
+                                <label for="name">Name</label>
+                                <input id="name" name="name" required class="contact-input" placeholder="Your Name" />
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required class="contact-input"
+                                    placeholder="your.email@example.com" />
+                            </div>
+                            <div>
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required class="contact-input"
+                                    placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" id="submit-button" class="btn-glow-contact">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-info-wrapper animate-on-scroll">
+                    <div class="info-cards-container">
+                        <div class="glow-card-contact info-card">
+                            <h3>Contact Information</h3>
+                            <div class="info-details">
+                                <div class="info-item">
+                                    <div class="info-icon-bg email"><i data-lucide="mail" class="info-icon"></i></div>
+                                    <div>
+                                        <p>Email</p>
+                                        <a href="mailto:rsivanesan285@gmail.com">rsivanesan285@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon-bg phone"><i data-lucide="phone" class="info-icon"></i></div>
+                                    <div>
+                                        <p>Phone</p>
+                                        <a href="tel:+919790029375">+91 9790029375</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="glow-card-contact info-card">
+                            <h3>Connect With Me</h3>
+                            <div class="social-links-grid">
+                                <a href="https://linkedin.com/in/sivanesan-ravichandran" target="_blank"
+                                    class="social-link linkedin">
+                                    <i data-lucide="linkedin"></i><span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/Sivanesan-R" target="_blank" class="social-link github">
+                                    <i data-lucide="github"></i><span>GitHub</span>
+                                </a>
+                                <a href="https://leetcode.com/u/sivanesan_E/" target="_blank"
+                                    class="social-link leetcode">
+                                    <i data-lucide="code"></i><span>LeetCode</span>
+                                </a>
+                                <a href="#" download="Sivanesan_R_Resume.pdf" class="social-link resume">
+                                    <i data-lucide="download"></i><span>Resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="toast-container"></div>
+
+    <footer id="footer" class="main-footer">
+        <div class="container">
+            <div class="footer-content animate-on-scroll">
+                <p>© 2025 Sivanesan R. Built with passion for AI/ML and innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
